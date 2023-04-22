@@ -1,0 +1,43 @@
+body {
+  overflow: hidden;
+}
+
+nav {
+  /* background color is var main color*/
+  background-color: var(--main-color);
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+
+/* transition for the menu. if menu is open, it will be visible, if not, it will be hidden. to do so, the div slips outside of the webpage */
+
+.navbar-links {
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.menu-open {
+  transform: translateX(0);
+  position: absolute;
+  /* corresponds to the navbar height*/
+  top: 60px;
+  right: 0;
+}
+.menu-hidden {
+  transform: translateX(200%);
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
