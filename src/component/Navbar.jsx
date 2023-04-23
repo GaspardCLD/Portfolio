@@ -13,7 +13,11 @@ function Navbar() {
   };
   return (
     <nav className="navbar">
-      <img src="" alt="logo du portfolio" />
+      <img
+        className="logo"
+        src="../src/assets/logo/logoPortfolio2.png"
+        alt="logo du portfolio"
+      />
       <h1>Mon Portfolio</h1>
       {/* hamburger component with onclick handleMenuClick */}
       <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
