@@ -1,8 +1,12 @@
 import React from "react";
-import "../styles/Footer.css";
+import "../styles/footer.css";
 
 function Footer() {
-  return <div></div>;
+  return (
+    <footer>
+      <p>© 2023 Gaspard Caillaud</p>
+    </footer>
+  );
 }
 
 export default Footer;
