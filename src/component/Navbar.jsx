@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Navbar.css";
+import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 import { Turn as Hamburger } from "hamburger-react";
 import { useState } from "react";
@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src="" alt="logo du portfolio" />
-      <p>Mon Portfolio</p>
+      <h1>Mon Portfolio</h1>
       {/* hamburger component with onclick handleMenuClick */}
       <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
       <div
