@@ -15,10 +15,9 @@ function Navbar() {
     <nav className="navbar">
       <img
         className="logo"
-        src="../src/assets/logo/logoPortfolio2.png"
+        src="../src/assets/logo/logoGaspard_bw.png"
         alt="logo du portfolio"
       />
-      <h1>Mon Portfolio</h1>
       {/* hamburger component with onclick handleMenuClick */}
       <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
       <div
@@ -28,13 +27,10 @@ function Navbar() {
           Home
         </Link>
         <Link className="navbar-brand" to="/introduction">
-          Introduction
-        </Link>
-        <Link className="navbar-brand" to="/skills">
-          Skills
+          A propos
         </Link>
         <Link className="navbar-brand" to="/projects">
-          Projects
+          Réalisations
         </Link>
         <Link className="navbar-brand" to="/contact">
           Contact

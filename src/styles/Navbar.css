@@ -6,19 +6,20 @@ nav {
   background-color: var(--main-color);
   color: var(--text-color);
   font-family: var(--main-font);
-  height: 60px;
+  height: 48px;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  background: rgba(255, 255, 255, 0.56);
+  backdrop-filter: blur(5px);
 }
 
 /*defining logo img display and size*/
 .logo {
-  height: 100%;
+  height: 70%;
   width: auto;
-  padding: 0.2rem;
 }
 
 /* transition for the menu. if menu is open, it will be visible, if not, it will be hidden. to do so, the div slips outside of the webpage */
