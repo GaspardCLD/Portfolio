@@ -1,0 +1,5 @@
+/*defining style for homepage*/
+
+.home {
+  font-family: var(--main-font);
+}
