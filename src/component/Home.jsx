@@ -3,8 +3,9 @@ import "../styles/home.css";
 
 function Home() {
   return (
-    <div>
-      <p>Lorem ipsum dolor sit amet c consec</p>
+    <div className="home">
+      <h1>GASPARD CAILLAUD</h1>
+      <h2>développeur web full-stack</h2>
     </div>
   );
 }
