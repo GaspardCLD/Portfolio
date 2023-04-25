@@ -13,7 +13,15 @@ function Navbar() {
   };
   return (
     <nav className="navbar">
+<<<<<<< HEAD
+      <img
+        className="logo"
+        src="../src/assets/logo/logoGaspard_bw.png"
+        alt="logo du portfolio"
+      />
+=======
       <img src="" alt="logo du portfolio" />
+>>>>>>> 426c1049aa3296e9e4f7b5b253e92dfaef05ad6c
       {/* hamburger component with onclick handleMenuClick */}
       <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
       <div
@@ -23,13 +31,10 @@ function Navbar() {
           Home
         </Link>
         <Link className="navbar-brand" to="/introduction">
-          Introduction
-        </Link>
-        <Link className="navbar-brand" to="/skills">
-          Skills
+          A propos
         </Link>
         <Link className="navbar-brand" to="/projects">
-          Projects
+          Réalisations
         </Link>
         <Link className="navbar-brand" to="/contact">
           Contact
