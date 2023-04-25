@@ -1,13 +1,16 @@
+/* import poppins font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 #root {
   --main-color: #ffffff;
   --secondary-color: #f5f5f5;
   --text-color: #000000;
-  --main-font: "Roboto", sans-serif;
+  --main-font: "Poppins", sans-serif;
 }
 
 /* body background is image with relative path ./assets/background_images/background_smartphone.png */
 body {
-  background-image: url("./assets/background_images/background_smartphone.png");
+  background-image: url("./assets/background_images/smartphone_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

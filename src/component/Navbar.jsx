@@ -14,7 +14,6 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src="" alt="logo du portfolio" />
-      <h1>Mon Portfolio</h1>
       {/* hamburger component with onclick handleMenuClick */}
       <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
       <div
