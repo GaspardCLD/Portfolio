@@ -4,3 +4,16 @@
   --text-color: #000000;
   --main-font: "Roboto", sans-serif;
 }
+
+/* body background is image with relative path ./assets/background_images/background_smartphone.png */
+body {
+  background-image: url("./assets/background_images/background_smartphone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
