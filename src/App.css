@@ -1,9 +1,16 @@
-<<<<<<< HEAD
-/*import poppins font*/
-=======
 /* import poppins font*/
->>>>>>> 426c1049aa3296e9e4f7b5b253e92dfaef05ad6c
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/*initialising css rules*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*removing margin-block-start and margin-block-end*/
+  margin-block: 0;
+  /*removing padding-block-start and padding-block-end*/
+  padding-block: 0;
+}
 
 #root {
   --main-color: #ffffff;
@@ -14,13 +21,18 @@
 
 /* body background is image with relative path ./assets/background_images/background_smartphone.png */
 body {
-  background-image: url("./assets/background_images/smartphone_image.jpg");
+  background-image: url("./assets/background_images/background_smartphone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  font-family: var(--main-font);
-  color: var(--text-color);
+}
+
+/*responsive media queries for the body*/
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("./assets/background_images/background_desktop.jpg");
+  }
 }

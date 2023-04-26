@@ -12,23 +12,21 @@ function Navbar() {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="navbar">
-<<<<<<< HEAD
+    <nav>
       <img
         className="logo"
         src="../src/assets/logo/logoGaspard_bw.png"
         alt="logo du portfolio"
       />
-=======
-      <img src="" alt="logo du portfolio" />
->>>>>>> 426c1049aa3296e9e4f7b5b253e92dfaef05ad6c
       {/* hamburger component with onclick handleMenuClick */}
-      <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
+      <div className="Hamburger">
+        <Hamburger toggled={isMenuOpen} toggle={handleMenuClick} />
+      </div>
       <div
         className={`navbar-links ${isMenuOpen ? "menu-open" : "menu-hidden"}`}
       >
         <Link className="navbar-brand" to="/">
-          Home
+          Accueil
         </Link>
         <Link className="navbar-brand" to="/introduction">
           A propos

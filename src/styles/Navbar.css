@@ -6,13 +6,14 @@ nav {
   background-color: var(--main-color);
   color: var(--text-color);
   font-family: var(--main-font);
-  height: 48px;
+  height: 56px;
+  width: 100%;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
 }
 
@@ -24,32 +25,63 @@ nav {
 
 /* transition for the menu. if menu is open, it will be visible, if not, it will be hidden. to do so, the div slips outside of the webpage */
 
-.navbar-links {
-  transition: all 0.5s ease-in-out;
+.navbar-links a {
+  /*no decoration for the links*/
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.menu-open {
+  /*modal that fits 90% of the height minus navbar and footer and 90% of the width*, blur background effect*/
+  height: calc(56vh - 56px - 40px);
+  width: 90vw;
+  background: rgba(255, 255, 255, 0.95);
+  /* blur effect behind*/
+  position: fixed;
+  top: 64px;
+  /*horizontal centering*/
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
-  color: black;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.menu-open {
-  transform: translateX(0);
-  position: absolute;
-  /* corresponds to the navbar height*/
-  top: 60px;
-  right: 0;
+  padding: 16px;
+  /*border radius*/
+  border-radius: 20px;
+  /*box shadow*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .menu-hidden {
-  transform: translateX(200%);
-  position: absolute;
-  top: 60px;
-  right: 0;
+  /* transform: translateX(200%); */
+  display: none;
 }
 
 /*responsive media queries for the navbar*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    margin-right: 32px;
+  }
+
+  .navbar-links a {
+    font-weight: 200;
+    font-size: 1.4em;
+  }
+
+  .menu-hidden,
+  .menu-open {
+    top: initial;
+  }
+
+  .Hamburger {
+    display: none;
+  }
 }

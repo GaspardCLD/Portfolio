@@ -4,7 +4,7 @@ import "../styles/footer.css";
 function Footer() {
   return (
     <footer>
-      <p>© 2023 Gaspard Caillaud</p>
+      <p>© 2023 - Gaspard Caillaud - Tous droits réservés</p>
     </footer>
   );
 }

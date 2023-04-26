@@ -2,4 +2,105 @@
 
 .home {
   font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  /*elements are on the right side inside the box*/
+  align-items: center;
+  text-align: center;
+  margin: 16px auto;
+  width: 88vw;
+  margin-top: 32px;
+}
+
+/*Home h1 - NAME*/
+.home h1 {
+  font-weight: 550;
+  font-size: 1.8em;
+}
+
+/*Home h2 - JOB*/
+.home h2 {
+  font-weight: 380;
+  font-size: 1.4em;
+}
+
+/*Home h3 - WELCOME*/
+.home h3 {
+  font-weight: 420;
+  font-size: 1.6em;
+  display: none;
+}
+
+/*Home paragraph - INTRO*/
+.home p {
+  display: none;
+}
+
+/*responsive media queries for the home*/
+@media screen and (min-width: 768px) {
+  /* introduction texts are displayed*/
+  .home p,
+  .home h3 {
+    display: initial;
+  }
+  /* home container is vertically centered with auto margin*/
+  .home {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height : calc 100vh - navbar height - footer height*/
+    height: calc(100vh - 56px - 40px);
+    width: 100vw;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 54%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    /* vertical padding 24px*/
+    padding: 24px 0;
+  }
+
+  /*Home h1 - NAME*/
+  .home h1 {
+    font-weight: 500;
+    font-size: 2.8em;
+
+    /*reduce line height*/
+    line-height: 1.2em;
+  }
+
+  /*Home h2 - JOB*/
+  .home h2 {
+    font-weight: 400;
+    font-size: 1.8em;
+  }
+
+  /*Home h3 - WELCOME*/
+  .home h3 {
+    font-weight: 420;
+    font-size: 1.5em;
+    /* margin-top: 24px; */
+  }
+
+  #intro-text {
+    font-weight: 300;
+    font-size: 1.1em;
+  }
+
+  #languages-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.1em;
+  }
 }
