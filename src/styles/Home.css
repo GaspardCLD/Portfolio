@@ -7,15 +7,28 @@
   /*elements are on the right side inside the box*/
   align-items: center;
   text-align: center;
-  margin: 16px auto;
-  width: 88vw;
+  margin: 8px auto;
+  width: 100vw;
   margin-top: 32px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 54%;
+  padding: 8px;
+  color: white;
+  /* letters have black border*/
+  -webkit-text-stroke: 0.12px black;
 }
 
 /*Home h1 - NAME*/
 .home h1 {
   font-weight: 550;
-  font-size: 1.8em;
+  font-size: 1.9em;
 }
 
 /*Home h2 - JOB*/
@@ -29,6 +42,12 @@
   font-weight: 420;
   font-size: 1.6em;
   display: none;
+}
+
+/*wrap intro text if needed*/
+#intro-text {
+  word-wrap: break-word;
+  margin: auto 16px;
 }
 
 /*Home paragraph - INTRO*/
@@ -61,12 +80,17 @@
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    height: 54%;
+    height: fit-content;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(4px);
     border-radius: 20px;
     /* vertical padding 24px*/
-    padding: 24px 0;
+    padding: 24px 0 24px 0;
+    color: black;
+    /* letters have no border*/
+    -webkit-text-stroke: 0px black;
+    /*increase gap between elements*/
+    gap: 16px;
   }
 
   /*Home h1 - NAME*/
@@ -88,7 +112,6 @@
   .home h3 {
     font-weight: 420;
     font-size: 1.5em;
-    /* margin-top: 24px; */
   }
 
   #intro-text {

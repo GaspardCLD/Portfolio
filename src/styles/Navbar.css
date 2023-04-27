@@ -29,7 +29,7 @@ nav {
   /*no decoration for the links*/
   text-decoration: none;
   color: black;
-  font-weight: 400;
+  font-weight: 250;
   font-size: 1.5em;
 }
 
@@ -37,8 +37,7 @@ nav {
   /*modal that fits 90% of the height minus navbar and footer and 90% of the width*, blur background effect*/
   height: calc(56vh - 56px - 40px);
   width: 90vw;
-  background: rgba(255, 255, 255, 0.95);
-  /* blur effect behind*/
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 64px;
   /*horizontal centering*/
@@ -66,7 +65,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 600px;
     align-items: center;
     margin-right: 32px;
   }

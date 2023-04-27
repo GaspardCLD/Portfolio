@@ -5,7 +5,6 @@ function Home() {
   return (
     <div className="home">
       <div className="home-container">
-        {" "}
         <div>
           <h1>GASPARD CAILLAUD</h1>
           <h2>développeur web full-stack</h2>
