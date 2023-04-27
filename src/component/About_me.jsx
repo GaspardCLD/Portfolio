@@ -4,11 +4,15 @@ import "../styles/about_me.css";
 function About_me() {
   return (
     <div className="about-me">
-      <img
-        src="../src/assets/about_me_images/photo_cv2.jpg"
-        alt="Photo de Gaspard Caillaud"
-      />
-      <p>
+      <div id="picture-name">
+        <img
+          src="../src/assets/about_me_images/photo_cv2.jpg"
+          alt="Photo de Gaspard Caillaud"
+        />
+        <p>Gaspard CAILLAUD</p>
+        <button>Mon CV</button>
+      </div>
+      <p id="about-me-description">
         Diplômé ingénieur informaticien, officier pilote d’hélicoptères au sein
         des forces spéciales, je poursuis actuellement une formation en
         développement web de type boot-camp afin d’être à jour avec les

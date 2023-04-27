@@ -10,7 +10,21 @@
   margin-top: 5vh;
   margin-bottom: calc(5vh + 40px);
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 16px;
+  border-radius: 20px;
+}
+
+#picture-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#picture-name p {
+  font-family: var(--main-font);
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 16px 0;
 }
 
 .about-me img {
@@ -21,8 +35,7 @@
   border-radius: 10px;
 }
 
-.about-me p {
-  white-space: pre-line;
+#about-me-description {
   font-family: var(--main-font);
   text-align: justify;
   margin: 0 16px;
@@ -40,7 +53,6 @@
 
   .about-me img {
     width: 20vw;
-    /*horizontal margin 32px without changing vertical margin*/
     margin: 24px 32px;
   }
 
