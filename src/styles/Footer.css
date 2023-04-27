@@ -2,7 +2,7 @@
 
 footer {
   /*colors*/
-  background-color: var(--main-color);
+  background: rgba(255, 255, 255, 0.9);
   color: rgb(68, 68, 68);
   font-family: var(--main-font);
 

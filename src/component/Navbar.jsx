@@ -25,16 +25,16 @@ function Navbar() {
       <div
         className={`navbar-links ${isMenuOpen ? "menu-open" : "menu-hidden"}`}
       >
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/" onClick={handleMenuClick}>
           Accueil
         </Link>
-        <Link className="navbar-brand" to="/introduction">
+        <Link className="navbar-brand" to="/about_me" onClick={handleMenuClick}>
           A propos
         </Link>
-        <Link className="navbar-brand" to="/projects">
+        <Link className="navbar-brand" to="/projects" onClick={handleMenuClick}>
           Réalisations
         </Link>
-        <Link className="navbar-brand" to="/contact">
+        <Link className="navbar-brand" to="/contact" onClick={handleMenuClick}>
           Contact
         </Link>
       </div>

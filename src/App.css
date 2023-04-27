@@ -6,9 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*removing margin-block-start and margin-block-end*/
   margin-block: 0;
-  /*removing padding-block-start and padding-block-end*/
   padding-block: 0;
 }
 
@@ -19,7 +17,6 @@
   --main-font: "Poppins", sans-serif;
 }
 
-/* body background is image with relative path ./assets/background_images/background_smartphone.png */
 body {
   background-image: url("./assets/background_images/background_smartphone.jpg");
   background-repeat: no-repeat;

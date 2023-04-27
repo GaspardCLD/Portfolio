@@ -57,7 +57,7 @@
 
 /*responsive media queries for the home*/
 @media screen and (min-width: 768px) {
-  /* introduction texts are displayed*/
+  /* about_me texts are displayed*/
   .home p,
   .home h3 {
     display: initial;
@@ -79,7 +79,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 75%;
     height: fit-content;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(4px);
