@@ -6,7 +6,7 @@ function About_me() {
     <div className="about-me">
       <div id="picture-name">
         <img
-          src="../src/assets/about_me_images/photo_cv2.jpg"
+          src="../src/assets/about_me_images/photo_cv3.jpg"
           alt="Photo de Gaspard Caillaud"
         />
         <p>Gaspard CAILLAUD</p>
